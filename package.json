@@ -1,0 +1,32 @@
+{
+  "name": "shhh",
+  "version": "1.0.0",
+  "description": "Allows temporarily disabling console in node.js. Useful for noisy unit tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:akupila/shhh.git"
+  },
+  "bugs": "https://github.com/akupila/shhh/issues",
+  "keywords": [
+    "console",
+    "node",
+    "disable",
+    "test",
+    "quiet",
+    "monkeypatch"
+  ],
+  "author": "Antti Kupila <akupila@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akupila/shhh/issues"
+  },
+  "homepage": "https://github.com/akupila/shhh",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  }
+}
