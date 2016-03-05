@@ -28,6 +28,24 @@ describe('shhh', function() {
     console.log('This will show up in console'); // Visible
 
     sinon.assert.calledOnce(spy);
-    spy.reset();
+    console.log.restore();
   });
+
+  it('should not re-patch', function() {
+    var spy = sinon.spy(console, 'log');
+
+    shhh.enable();
+    shhh.enable();
+    shhh.enable();
+    console.log('Hidden 1');
+    console.log('Hidden 2');
+    console.log('Hidden 3');
+    shhh.disable();
+    shhh.disable();
+    shhh.disable();
+    console.log('This will show up in console'); // Visible
+
+    sinon.assert.calledOnce(spy);
+    console.log.restore();
+  })
 });
