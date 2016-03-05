@@ -1,6 +1,6 @@
 {
   "name": "shhh",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows temporarily disabling console in node.js. Useful for noisy unit tests",
   "main": "index.js",
   "scripts": {
