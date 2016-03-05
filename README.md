@@ -70,3 +70,15 @@ describe('Some noisy module', function() {
   });
 })
 ```
+
+## Tests
+
+```bash
+npm run test
+```
+
+## Run test coverage
+
+```bash
+npm run cover
+```
