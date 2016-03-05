@@ -4,13 +4,17 @@
   "description": "Allows temporarily disabling console in node.js. Useful for noisy unit tests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:akupila/shhh.git"
   },
-  "bugs": "https://github.com/akupila/shhh/issues",
+  "bugs": {
+    "url": "https://github.com/akupila/shhh/issues"
+  },
   "keywords": [
     "console",
     "node",
@@ -21,12 +25,12 @@
   ],
   "author": "Antti Kupila <akupila@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/akupila/shhh/issues"
-  },
   "homepage": "https://github.com/akupila/shhh",
   "devDependencies": {
+    "coveralls": "^2.11.8",
+    "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0",
     "sinon": "^1.17.3"
   }
 }

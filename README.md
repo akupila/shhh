@@ -1,5 +1,7 @@
 # shhh
 
+[![Coverage Status](https://coveralls.io/repos/github/akupila/shhh/badge.svg?branch=master)](https://coveralls.io/github/akupila/shhh?branch=master)
+
 Allows temporarily disabling console output, for instance when used with noisy unit tests.
 
 For production use you probably want to use something like [Winston](https://github.com/winstonjs/winston)
