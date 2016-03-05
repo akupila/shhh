@@ -4,7 +4,8 @@
 
 Allows temporarily disabling console output, for instance when used with noisy unit tests.
 
-For production use you probably want to use something like [Winston](https://github.com/winstonjs/winston)
+While you can disable logging in production with this it's recommend to use a library specifically designed for that purpose. 
+For instance for node check out [Winston](https://github.com/winstonjs/winston)
 
 ## Installation
 
@@ -45,7 +46,7 @@ test.js
 
 ```javascript
 const shhh = require('shhh');
-const dummyMath = require('dummyMath');
+const dummyMath = require('./dummyMath');
 
 describe('Some noisy module', function() {
   before(function() {
